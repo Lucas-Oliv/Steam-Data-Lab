@@ -61,7 +61,7 @@ Game-Tracker/
 ├── app.py                 # Aplicação Frontend (Streamlit)
 ├── backend.py             # Lógica de Negócios, ML e Conexão com IA
 └── README.md              # Documentação
----
+
 ```
 ---
 ## ⚙️ Instalação e Uso
