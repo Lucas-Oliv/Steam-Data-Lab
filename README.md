@@ -20,7 +20,7 @@
 
 ## 🚀 Sobre o Projeto
 
-O **Game Tracker** não é apenas um organizador de biblioteca. É uma ferramenta analítica que consome dados reais da **Steam API**, processa essas informações para gerar estatísticas avançadas e utiliza Inteligência Artificial para atuar como um "Consultor de Dados" pessoal.
+O **Steam-Data-Lab** não é apenas um organizador de biblioteca. É uma ferramenta analítica que consome dados reais da **Steam API**, processa essas informações para gerar estatísticas avançadas e utiliza Inteligência Artificial para atuar como um "Consultor de Dados" pessoal.
 
 O objetivo foi criar um pipeline completo de dados: **Extração -> Transformação -> Armazenamento -> Modelagem (ML) -> Visualização -> Explicação (LLM).**
 
