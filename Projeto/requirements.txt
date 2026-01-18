@@ -1,0 +1,7 @@
+streamlit
+pandas
+requests
+altair
+scikit-learn
+streamlit-lottie
+google-generativeai
