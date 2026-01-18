@@ -62,3 +62,41 @@ Game-Tracker/
 ├── app.py                 # Aplicação Frontend (Streamlit)
 ├── backend.py             # Lógica de Negócios, ML e Conexão com IA
 └── README.md              # Documentação
+---
+
+## ⚙️ Instalação e Uso
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/SEU_USUARIO/Steam-Data-Lab.git](https://github.com/SEU_USUARIO/Steam-Data-Lab.git)
+    cd Steam-Data-Lab
+    ```
+
+2.  **Instale as dependências:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3.  **Configure as Chaves (Segurança):**
+    * Crie uma pasta `.streamlit` na raiz do projeto.
+    * Crie um arquivo `secrets.toml` dentro dela.
+    * Adicione suas chaves:
+      ```toml
+      steam_key = "SUA_CHAVE"
+      steam_id = "SEU_ID"
+      gemini_key = "SUA_CHAVE_GOOGLE"
+      ```
+
+4.  **Execute a aplicação:**
+    ```bash
+    streamlit run app.py
+    ```
+
+---
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT.
+
+---
+**Desenvolvido por Lucas** 🚀
