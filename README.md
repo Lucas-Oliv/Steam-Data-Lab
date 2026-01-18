@@ -59,5 +59,4 @@ Game-Tracker/
 │   └── secrets.toml       # (Opcional) Armazenamento seguro de chaves
 ├── app.py                 # Aplicação Frontend (Streamlit)
 ├── backend.py             # Lógica de Negócios, ML e Conexão com IA
-├── requirements.txt       # Dependências
 └── README.md              # Documentação
