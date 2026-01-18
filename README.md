@@ -11,8 +11,10 @@
 
 ## 📸 Screenshots
 
-![Dashboard View](https://via.placeholder.com/800x400?text=Dashboard+Cinematic+View)
-*(Substitua esta imagem por um print do seu Dashboard)*
+![Dashboard View](<img width="1874" height="954" alt="image" src="https://github.com/user-attachments/assets/4bb93768-ac26-4616-b2c0-8a3e00e74c0c" />
+)
+
+<img width="1870" height="931" alt="image" src="https://github.com/user-attachments/assets/2ebfff47-febc-4dc6-8ce6-e97d7501b5ff" />
 
 ---
 
