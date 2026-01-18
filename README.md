@@ -48,9 +48,8 @@ O objetivo foi criar um pipeline completo de dados: **Extração -> Transformaç
 * **AI & LLM:** Google Generative AI (Gemini Pro/Flash)
 * **Data Viz:** Altair
 * **API:** Steam Web API
-
+  
 ---
-
 ## 📂 Estrutura do Projeto
 
 ```text
@@ -63,7 +62,8 @@ Game-Tracker/
 ├── backend.py             # Lógica de Negócios, ML e Conexão com IA
 └── README.md              # Documentação
 ---
-
+```
+---
 ## ⚙️ Instalação e Uso
 
 1.  **Clone o repositório:**
@@ -100,3 +100,6 @@ Este projeto está sob a licença MIT.
 
 ---
 **Desenvolvido por Lucas** 🚀
+---
+
+
