@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Outfit', sans-serif;
+}
+
+.stApp {
+    background: radial-gradient(circle at center, #1b2838 0%, #0d1015 100%);
+    color: #e0e0e0;
+}
+
+/* --- HEADER DO PERFIL (ESTILO CINEMÁTICO / FADE) --- */
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 0; 
+    background: linear-gradient(90deg, rgba(13, 16, 21, 0) 0%, rgba(13, 16, 21, 0.6) 100%);
+    border-radius: 20px;
+    overflow: hidden; 
+    margin-bottom: 20px;
+    position: relative;
+    border: 1px solid rgba(102, 192, 244, 0.1);
+    min-height: 250px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Área da foto (Esquerda) */
+.profile-pic {
+    flex-shrink: 0;
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+
+/* A Mágica do Fade */
+.profile-pic img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    border-radius: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    
+    /* Cria a transição suave para a direita */
+    -webkit-mask-image: linear-gradient(to right, black 60%, transparent 100%);
+    mask-image: linear-gradient(to right, black 60%, transparent 100%);
+    
+    transition: transform 0.5s ease;
+}
+
+.profile-pic img:hover {
+    transform: scale(1.05);
+}
+
+/* Área de Texto (Direita) */
+.profile-info {
+    z-index: 2;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-info h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin: 0;
+    color: #fff;
+    line-height: 1;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.8);
+    letter-spacing: -1px;
+}
+
+.profile-details {
+    display: flex; align-items: center; gap: 15px; margin-top: 15px;
+    font-size: 1.1rem; color: #b0c4de; text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+}
+
+/* Badges e Insígnias */
+.badge-showcase {
+    display: flex; gap: 10px; margin-top: 15px; margin-bottom: 10px;
+}
+
+.steam-badge-slot {
+    width: 40px; height: 40px;
+    background: linear-gradient(135deg, #2a475e, #1b2838);
+    border: 1px solid #66c0f4; border-radius: 50%;
+    display: flex; justify-content: center; align-items: center;
+    font-size: 0.9rem; box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    cursor: help; transition: transform 0.2s;
+}
+.steam-badge-slot:hover { transform: translateY(-5px); background: #66c0f4; color: #000; }
+
+.level-badge {
+    background: #2a475e; border: 2px solid #66c0f4; color: white;
+    padding: 2px 12px; border-radius: 15px; font-weight: 800;
+}
+
+/* --- GRID DE JOGOS --- */
+.games-grid {
+    display: flex; flex-wrap: wrap; gap: 20px;
+    justify-content: center; padding: 20px 0;
+}
+
+.card-hover {
+    position: relative; width: 280px; height: 160px;
+    border-radius: 12px; overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.1);
+    background-color: #1b2838;
+}
+.card-hover:hover {
+    transform: scale(1.08); box-shadow: 0 15px 30px rgba(102, 192, 244, 0.4);
+    border-color: #66c0f4; z-index: 10;
+}
+
+.card-img-bg {
+    width: 100%; height: 100%;
+    background-size: cover; background-position: center;
+    transition: filter 0.3s ease;
+}
+.card-hover:hover .card-img-bg { filter: blur(3px) brightness(0.3); }
+
+.card-info-overlay {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    text-align: center; opacity: 0; transition: opacity 0.3s ease; padding: 10px;
+}
+.card-hover:hover .card-info-overlay { opacity: 1; }
+
+.overlay-title { color: white; font-weight: 800; font-size: 1rem; margin-bottom: 5px; text-shadow: 0 2px 4px black; }
+.overlay-stats { color: #b0c4de; font-size: 0.8rem; margin-bottom: 8px; }
+.overlay-perc { font-size: 1.8rem; font-weight: 900; color: #66c0f4; text-shadow: 0 0 10px rgba(102, 192, 244, 0.5); margin: 0; }
+
+.mini-badge {
+    font-size: 0.65rem; padding: 3px 8px; border-radius: 10px;
+    text-transform: uppercase; font-weight: bold; color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5); margin-top: 5px;
+}
+
+/* CORES STATUS */
+.bg-plat { background: linear-gradient(90deg, #00C853, #64DD17); color: black; }
+.bg-meta { background: linear-gradient(90deg, #FF6D00, #FFAB00); color: black; }
+.bg-back { background: linear-gradient(90deg, #2962FF, #448AFF); }
+.bg-drop { background: linear-gradient(90deg, #D50000, #FF1744); }
+
+/* OVERRIDES STREAMLIT */
+div[data-testid="metric-container"] { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px); }
+div[data-testid="stMetricValue"] { color: #66c0f4 !important; }
+.stTabs [aria-selected="true"] { background-color: #66c0f4 !important; color: #000 !important; }
